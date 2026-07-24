@@ -1,0 +1,79 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# next.js
+.next/
+out/
+
+# production
+build/
+dist/
+
+# environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/settings.json
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AI session dumps (Gemini CLI transcripts)
+line-*.json
+
+# Local generated images (default MACRO_PICKLE_EXPORT_DIR)
+generated-images/
+
+# Exported prompt notes (default MACRO_PICKLE_PROMPT_VAULT)
+exported-prompts/
+
+# Generated video clips
+omni-clips/
+*-clips/
+
+# Local prompt lists (keep the example, ignore real ones)
+prompts.txt
+prompts.json
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# vercel
+.vercel
+
+# credentials
+*.pem
+*.key
+*.p12
+credentials.json
+service-account.json
+*_token.json
+
+# Local scratch — loose preview images & one-off batch inputs (not source)
+/*.jpg
+/*.png
+/_prsm-*.json
+/_local-refs/
+scripts/_prsm-*.ts
+.playwright-mcp/
+.laclaude-tmp/
+
+# Media pipeline output (generated reference frames + video)
+pipeline-output/
+
+# Model registry — user-specific model selection state (scripts/lib/models)
+.macro-pickle/

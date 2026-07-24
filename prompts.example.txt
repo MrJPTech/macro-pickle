@@ -1,0 +1,5 @@
+# macro-pickle local image prompts — one per line. Blank lines and #comments ignored.
+# Run: pnpm img --file prompts.txt
+
+A neon-green pickle mascot character, dark studio background, product hero shot, soft rim lighting
+Flat-lay of branded content marketing assets, purple and blue gradient, clean modern tech aesthetic

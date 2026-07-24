@@ -1,0 +1,12 @@
+# PaddleOCR sidecar deps for macro-pickle's OPTIONAL local OCR rail.
+# Install into the interpreter that Node's MACRO_PICKLE_PYTHON points at:
+#   pip install -r scripts/py/requirements.txt
+#
+# paddlepaddle below is the CPU build. For GPU, install the matching paddlepaddle-gpu
+# wheel per https://www.paddlepaddle.org.cn/ instead. The first PaddleOCR() call
+# downloads the PP-OCR model weights (needs network once, then cached).
+#
+# Note: paddlepaddle wheels lag the newest CPython — if your default Python has no
+# wheel, use a 3.10-3.12 interpreter and point MACRO_PICKLE_PYTHON at it.
+paddleocr>=3.0
+paddlepaddle>=3.0

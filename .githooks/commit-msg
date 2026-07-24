@@ -1,0 +1,24 @@
+#!/bin/sh
+#
+# commit-msg guard — strip any "Co-Authored-By:" trailer that attributes
+# Claude / Anthropic, so the attribution can never be auto-re-added.
+#
+# Matches (case-insensitive) only lines that START as a Co-Authored-By trailer
+# AND reference claude or anthropic. Body text that merely mentions the phrase
+# (e.g. a commit describing this guard) is left untouched because it does not
+# begin with the trailer key.
+#
+# Enabled via:  git config core.hooksPath .githooks   (see .githooks/README.md)
+
+msg_file="$1"
+[ -f "$msg_file" ] || exit 0
+
+# Drop matching trailer lines.
+grep -viE '^[[:space:]]*Co-[Aa]uthored-[Bb]y:.*(claude|anthropic)' "$msg_file" > "$msg_file.tmp" 2>/dev/null || :
+
+# Collapse any trailing blank lines left behind (git would strip them anyway).
+awk 'NF{last=NR} {line[NR]=$0} END{for(i=1;i<=last;i++) print line[i]}' \
+    "$msg_file.tmp" > "$msg_file" 2>/dev/null || mv "$msg_file.tmp" "$msg_file"
+rm -f "$msg_file.tmp"
+
+exit 0

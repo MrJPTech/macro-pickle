@@ -1,0 +1,25 @@
+{
+  "name": "Quiet Desk Co.",
+  "style": "a bold, high-impact, flat graphic logo emblem for a premium desk-objects brand with a dark modern identity — one solid rounded-square badge completely filled edge to edge with vivid warm amber-orange, carrying a single bold simple symbol cut cleanly out of it in deep near-black negative space (a desk lamp's round pool of light resting above a thick desk bar); heavy, confident, maximum presence, the symbol fills the badge; strongly centered; bold clean flat shapes only, smooth solid color, sharp high contrast, no thin outlines, no realism, no fine detail, no texture, no shading",
+  "palette": ["vivid amber orange", "warm amber", "deep near-black charcoal"],
+  "prefer": [
+    "one solid amber rounded-square badge that fills the frame",
+    "a single bold symbol cut from the amber in dark negative space, suggesting a lamp's light over a desk",
+    "heavy, confident, high-contrast, maximum presence",
+    "a flat, modern, premium app-icon look",
+    "clear and strong even when shown small"
+  ],
+  "avoid": [
+    "any rendered text, letters, words, numbers, hex codes, color codes, labels, captions, annotations",
+    "blueprint, technical drawing, schematic, dimension lines, measurement marks, rulers, grid paper",
+    "white or light background, paper background, plain white field",
+    "thin outlines, hollow line-art, subtle low-contrast marks, pale or washed-out color, muted brown or clay",
+    "photographic realism, 3D, bevels, embossing, drop shadows, glossy reflections, gradients",
+    "busy detail, multiple competing symbols, clutter, ornamentation",
+    "garbled or asymmetrical shapes, off-center composition, melted or smeared edges",
+    "cool colors — blue, green, purple, neon; rainbow or multi-color palettes",
+    "watermark, signature, third-party brand logos, app store mockup, hands, devices"
+  ],
+  "promptSuffix": "bold minimalist flat graphic logo emblem, one solid amber rounded-square badge with a clean dark cut-out symbol, heavy high-contrast flat shapes, strong presence, modern and premium, no text",
+  "aspect": "1:1"
+}

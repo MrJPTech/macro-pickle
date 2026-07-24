@@ -1,0 +1,43 @@
+{
+  "name": "macro-pickle",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "tsc --noEmit",
+    "img": "tsx scripts/generate-image-local.ts",
+    "fal": "tsx scripts/generate-fal.ts",
+    "prompt": "tsx scripts/build-prompt.ts",
+    "describe": "tsx scripts/describe-product.ts",
+    "ocr": "tsx scripts/ocr.ts",
+    "analyze-video": "tsx scripts/analyze-video.ts",
+    "nano": "tsx scripts/generate-nano.ts",
+    "veo": "tsx scripts/generate-veo.ts",
+    "kling": "tsx scripts/generate-kling.ts",
+    "omni": "tsx scripts/generate-omni.ts",
+    "seedance": "tsx scripts/generate-seedance.ts",
+    "wan": "tsx scripts/generate-wan.ts",
+    "models": "tsx scripts/models.ts",
+    "rank-skus": "tsx scripts/rank-skus.ts",
+    "gen-clips": "tsx scripts/gen-clips.ts",
+    "scene:new": "tsx scripts/pipeline/new-scene.ts",
+    "scene:refs": "tsx scripts/pipeline/gen-references.ts",
+    "scene:select": "tsx scripts/pipeline/select-references.ts",
+    "scene:analyze": "tsx scripts/pipeline/analyze.ts",
+    "scene:video": "tsx scripts/pipeline/gen-video.ts",
+    "mcp:image": "tsx mcp/image-server/index.ts"
+  },
+  "dependencies": {
+    "@fal-ai/client": "^1.10.1",
+    "@google/genai": "^2.10.0",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "dotenv": "^17.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "packageManager": "pnpm@9.15.9"
+}

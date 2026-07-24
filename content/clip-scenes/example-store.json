@@ -1,0 +1,42 @@
+{
+  "_comment": "Example scene config for `pnpm gen-clips --store <media-dir>`. Copy to content/clip-scenes/<store>.json and retune. Top-level keys are CATEGORY names matching <media-dir>/<category>/; each holds a Veo scene-variant pair (ASSET-lock environments) plus one Kling studio→lifestyle reveal prompt. Keys prefixed with _ are directives, not categories.",
+
+  "_suffix": ". Show ONLY the product exactly as in the reference images — do not add, duplicate, multiply, or invent any extra products or clutter. Keep the product the crisp, hero focal subject with true-to-reference colors, shape, and materials. Render it at realistic, true-to-life proportions and real-world size for what the item actually is — never oversized, giant, or out of scale with its surroundings; keep it photorealistic with believable everyday scale relative to nearby objects. Premium commercial product advertisement: clean composition, sharp product detail, shallow depth of field, soft natural camera motion (slow push-in or gentle orbit), warm inviting light, aspirational lifestyle mood, professional e-commerce campaign quality. No people, no text, no logos, no watermarks.",
+
+  "_scale_comment": "Per-SKU real-world size anchor. Fixes the common failure where a small product with a white-background reference and no scale cue renders giant. Key = SKU id, value = a phrase naming a familiar object for honest scale.",
+  "_scale": {
+    "EXAMPLE-SKU-ID": "a small palm-sized jar, roughly the size of a hockey puck, with a few leaves beside it for honest scale"
+  },
+
+  "_default": {
+    "veo": [
+      "Product hero in a natural outdoor environment, cinematic golden-hour light, no people",
+      "Product displayed in a clean lifestyle setting, beautiful soft natural light, editorial quality, no people"
+    ],
+    "kling": "smooth studio-to-lifestyle reveal, product transforms from clean white background to its in-use scene, cinematic product focus"
+  },
+
+  "outdoor": {
+    "veo": [
+      "Product positioned on a mossy log in a lush forest, early morning mist rising, shafts of golden light through fir trees",
+      "Product resting on a picnic table at a wooded campsite, pine trees and canvas tent in the background, dappled afternoon sunlight"
+    ],
+    "kling": "product transitions from studio to forest clearing, smooth morphing reveal, dramatic outdoor lighting shift"
+  },
+
+  "home": {
+    "veo": [
+      "Product on a warm oak desk beside a ceramic mug, soft window light from camera-left, calm minimal interior, no people",
+      "Product on a linen surface in a sunlit room, gentle shadows, muted neutral palette, editorial interiors quality"
+    ],
+    "kling": "product reveal from clean studio white into a warm lived-in interior, soft daylight bloom"
+  },
+
+  "beach": {
+    "veo": [
+      "Product hero on white sand, crystal-clear turquoise water behind, golden hour sunlight, gentle sea breeze, no people",
+      "Product on a striped towel on smooth clean sand, bright midday sun, turquoise waves rolling softly in the background"
+    ],
+    "kling": "smooth studio-to-beach reveal, product transforms from clean white background to a sandy shoreline, cinematic product focus"
+  }
+}
